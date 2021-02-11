@@ -1,0 +1,16 @@
+.GetData-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(185, 57, 57);
+  }
+  body {
+    background-color: #282c34;
+    /* display: flex; */
+  font-family: Arial;
+  color: white;
+  }
