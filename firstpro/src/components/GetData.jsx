@@ -11,6 +11,7 @@ class GetData extends Component {
             }
             this.addData = this.addData.bind(this);
             this.getDataById = this.getDataById.bind(this);
+            this.UploadFile = this.UploadFile.bind(this);
         
     }
     // componentDidMount(){
@@ -28,14 +29,19 @@ class GetData extends Component {
     {
         this.props.history.push('/getdatabyid');
     }
+    UploadFile()
+    {
+        this.props.history.push('postfile');
+    }
     render() {
         return (
             <div className="container">
                <h1 className ="text-center" style={{marginRight:"80px" , marginTop:"50px" , color:"red" , textDecorationThickness:"100px"}}> WELCOME </h1>
             <div className ="text-center">
-            <button className="btn btn-primary" style={{marginRight:"80px" , marginTop:"50px"}} onClick = {this.addData}> addData </button>
+            <button className="btn btn-primary" style={{marginRight:"80px" , marginTop:"50px"}} onClick = {this.addData}> AddData </button>
            {'\n'}
-            <button className="btn btn-primary" style={{marginRight:"80px" , marginTop:"50px"}} onClick = {this.getDataById}> GetData </button>
+        <button className="btn btn-primary" style={{marginRight:"80px" , marginTop:"50px"}} onClick= {this.getDataById}> GetData </button>
+        <button className="btn btn-primary" style={{marginRight:"80px" , marginTop:"50px"}} onClick= {this.UploadFile}> UploadFile </button>
             </div>
                 {/* <div className = "row">
                     <table className = "table table-striped table-bordered">

@@ -27,10 +27,10 @@ class UploadFiles extends Component{
     render(){
         return(
             <div className="container">
-                <div className="row">
+                <div className="form-group">
                     <div className="col-md-6">
                         <div className="form-group files color">
-                            <label className ="text-center">Upload Your File </label>
+                            <h2>Upload Your File </h2>
                             <input type="file" onChange={this.uploadFile}/>
                         </div>
                     </div>

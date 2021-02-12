@@ -92,7 +92,7 @@ class CreateHotelComponent extends Component {
                     </div>
                 </div>
                 </div>
-                {this.state.check && <div> <p className ="text-center">ADDED SUCCESSFULLY</p> 
+                {this.state.check && <div> <h2 className ="text-center">ADDED SUCCESSFULLY</h2> 
                 </div>}
                 
                </div>
