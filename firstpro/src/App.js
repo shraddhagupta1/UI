@@ -9,6 +9,7 @@ import HeaderComponent from './components/HeaderComponent';
 import Footer from './components/Footer';
 import CreateHotelComponent from './components/CreateHotelComponent';
 import GetDataById from './components/GetDataById';
+import UploadFiles from './components/UploadFiles';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route exact stric path="/getdata" component={GetData}/> 
         <Route exact stric path="/add-data" component={CreateHotelComponent}/> 
         <Route exact stric path="/getdatabyid" component={GetDataById}/> 
+        <Route exact stric path="/postfile" component={UploadFiles}/>
         
           {/* <Home /> */}
       </Switch>
